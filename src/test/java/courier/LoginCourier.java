@@ -1,5 +1,5 @@
-import courier.Courier;
-import courier.CourierAPI;
+package courier;
+
 import io.qameta.allure.junit4.DisplayName;
 import io.restassured.RestAssured;
 import org.junit.After;
