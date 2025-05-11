@@ -9,7 +9,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.Matchers.notNullValue;
 
-public class LoginCourier {
+public class LoginCourierTest {
 
     CourierAPI courierAPI = new CourierAPI();
     Courier courier = new Courier("Chester2014", "0121", "Честер");

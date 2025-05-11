@@ -13,12 +13,12 @@ import java.util.Collections;
 import static org.hamcrest.Matchers.notNullValue;
 
 @RunWith(Parameterized.class)
-public class CreateOrder {
+public class CreateOrderTest {
 
     OrderAPI orderAPI = new OrderAPI();
     private String color;
 
-    public CreateOrder(String color) {
+    public CreateOrderTest(String color) {
         this.color = color;
     }
 

@@ -9,7 +9,7 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 
 
-public class CreateCourier {
+public class CreateCourierTest {
 
     CourierAPI courierAPI = new CourierAPI();
     Courier courier = new Courier("Simba", "6789", "Симба");

@@ -7,7 +7,7 @@ import org.junit.Test;
 
 import static org.hamcrest.Matchers.notNullValue;
 
-public class GetOrders {
+public class GetOrdersTest {
 
     OrderAPI orderAPI = new OrderAPI();
 
