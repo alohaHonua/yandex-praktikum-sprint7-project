@@ -1,13 +1,10 @@
 package courier;
 
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
 import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.equalTo;
-
 
 public class CreateCourierTest {
 
@@ -16,11 +13,6 @@ public class CreateCourierTest {
     Courier courierNoPassword = new Courier("Simba","", "Симба");
     Courier courierNoLogin = new Courier("","6789", "Симба");
     Courier courierSameLogin = new Courier("Simba", "9678", "Симбастьян");
-
-    @Before
-    public void setUp() {
-        RestAssured.baseURI = "https://qa-scooter.praktikum-services.ru/";
-    }
 
     @Test
     @DisplayName("Создание курьера, успешный запрос возвращает код 201")

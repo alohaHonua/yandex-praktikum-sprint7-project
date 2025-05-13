@@ -1,7 +1,6 @@
 package courier;
 
 import io.qameta.allure.junit4.DisplayName;
-import io.restassured.RestAssured;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,8 +14,7 @@ public class LoginCourierTest {
     Courier courier = new Courier("Chester2014", "0121", "Честер");
 
     @Before
-    public void setUp() {
-        RestAssured.baseURI = "https://qa-scooter.praktikum-services.ru/";
+    public void createCourier() {
         courierAPI.createCourierRequest(courier);
     }
 
